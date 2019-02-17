@@ -1,0 +1,6 @@
+{
+    "env": {
+        "MONGO_ATLAS_PW": "g1DWFOxXEbcVdQCP",
+        "JWT_KEY": "Grana2d"
+    }
+}
