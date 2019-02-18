@@ -2,7 +2,7 @@
   "name": "test_rest_api_project",
   "version": "1.0.0",
   "description": "REST API test project, by Academind.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
