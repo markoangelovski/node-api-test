@@ -4,7 +4,8 @@
   "description": "REST API test project, by Academind.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "Test",
   "license": "ISC",
