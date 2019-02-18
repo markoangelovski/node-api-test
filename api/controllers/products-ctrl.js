@@ -19,7 +19,7 @@ exports.products_get_all = (req, res, next) => {
                     _id: doc._id,
                     request: {
                         type: "GET",
-                        url: `https://sleepy-dusk-28123.herokuapp.com/products/${doc._id}`
+                        url: `https://sleepy-dusk.herokuapp.com/products/${doc._id}`
                     }
                 }
             }) 
@@ -54,7 +54,7 @@ exports.products_create_product = (req, res, next) => {
                 _id: result._id,
                 request: {
                     type: "GET",
-                    url: `https://sleepy-dusk-28123.herokuapp.com/products/${result._id}`
+                    url: `https://sleepy-dusk.herokuapp.com/products/${result._id}`
                 }
             }
         });
@@ -80,7 +80,7 @@ exports.products_get_product = (req, res, next) => {
             product: doc,
             request: {
                 type: "GET",
-                url: `https://sleepy-dusk-28123.herokuapp.com/products${doc._id}`
+                url: `https://sleepy-dusk.herokuapp.com/products/${doc._id}`
             }
         });
         } else {
@@ -107,7 +107,7 @@ exports.products_update_product = (req, res, next) => {
             message: "Product updated successfully!",
             request: {
                 type: "GET",
-                url: `https://sleepy-dusk-28123.herokuapp.com/products/${id}`
+                url: `https://sleepy-dusk.herokuapp.com/products/${id}`
             }
         });
     })
@@ -129,7 +129,7 @@ exports.products_delete_product = (req, res, next) => {
             message: "Product deleted.",
             request: {
                 type: "POST",
-                url: "https://sleepy-dusk-28123.herokuapp.com/products",
+                url: "https://sleepy-dusk.herokuapp.com/products",
                 body: {
                     name: "String",
                     price: "Number"

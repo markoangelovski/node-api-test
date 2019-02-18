@@ -8,7 +8,7 @@ const checkAuth = require("../middleware/check-auth");
 const UserControler = require("../controllers/users-ctrl");
 
 // Handles user signups
-router.post("/signup", UserControler.user_signup);
+router.post("/signup", checkAuth, UserControler.user_signup);
 
 // Handles user logins
 router.post("/login", UserControler.user_login);

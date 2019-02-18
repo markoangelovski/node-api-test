@@ -20,7 +20,7 @@ exports.orders_get_all = (req, res, next) => {
                     quantity: doc.quantity,
                     request: {
                         type: "GET",
-                        url: `https://sleepy-dusk-28123.herokuapp.com/orders/${doc._id}`
+                        url: `https://sleepy-dusk.herokuapp.com/orders/${doc._id}`
                     }
                 }
             })
@@ -60,7 +60,7 @@ exports.orders_create_order = (req, res, next) => {
             },
             request: {
                 type: "GET",
-                url: `https://sleepy-dusk-28123.herokuapp.com/orders/${result._id}`
+                url: `https://sleepy-dusk.herokuapp.com/orders/${result._id}`
             }
         });
     })
@@ -87,7 +87,7 @@ exports.orders_get_order = (req, res, next) => {
             order: order,
             requests: {
                 type: "GET",
-                url: "https://sleepy-dusk-28123.herokuapp.com/orders"
+                url: "https://sleepy-dusk.herokuapp.com/orders"
             }
         })
     })
