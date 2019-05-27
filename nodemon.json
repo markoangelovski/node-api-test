@@ -1,6 +1,6 @@
 {
     "env": {
-        "MONGO_ATLAS_PW": "CF9rYHGYTwUCOUSs",
-        "JWT_KEY": "Grana3d"
+        "MONGO_ATLAS_PW": "redacted",
+        "JWT_KEY": "redacted"
     }
 }
