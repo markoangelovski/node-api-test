@@ -4,21 +4,22 @@
   "description": "REST API test project, by Academind.",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "develop": "nodemon server.js"
   },
-  "author": "Test",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.4",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "jsonwebtoken": "^8.4.0",
-    "mongoose": "^5.4.9",
-    "morgan": "^1.9.1",
-    "multer": "^1.4.1"
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.11",
+    "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.19.1"
   }
 }

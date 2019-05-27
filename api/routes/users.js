@@ -1,19 +1,22 @@
 const express = require("express");
 const router = express.Router();
 
-// Middleware imports
+// Middleware import
 const checkAuth = require("../middleware/check-auth");
 
-// Controllers imports
-const UserControler = require("../controllers/users-ctrl");
+// Schema imports
+const User = require("../models/user");
 
-// Handles user signups
-router.post("/signup", checkAuth, UserControler.user_signup);
+// Controller import
+const UserController = require("../controllers/users");
 
-// Handles user logins
-router.post("/login", UserControler.user_login);
+// Create user requests
+router.post("/signup", checkAuth, UserController.user_signup);
 
-// Handles user deletes
-router.delete("/:userId", checkAuth, UserControler.user_delete);
+// Login user requests
+router.post("/login", UserController.user_login);
+
+// DELETE user requests
+router.delete("/:userId", checkAuth, UserController.user_delete);
 
 module.exports = router;
